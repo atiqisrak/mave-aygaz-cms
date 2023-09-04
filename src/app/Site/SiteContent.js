@@ -9,6 +9,16 @@ import {
   BlockOutlined,
   MenuUnfoldOutlined,
   MenuFoldOutlined,
+  LogoutOutlined,
+  PicRightOutlined,
+  FileImageOutlined,
+  MenuOutlined,
+  PicCenterOutlined,
+  SlidersOutlined,
+  IdcardOutlined,
+  FormOutlined,
+  FontSizeOutlined,
+  BoxPlotOutlined,
 } from '@ant-design/icons';
 import Link from 'next/link';
 
@@ -116,13 +126,13 @@ export default function SiteConstant ({ selectedMenuItem, handleMenuClick, child
               fontWeight: 'bold',
             }}
           >
-            <Menu.Item key="1" onClick={() => router.push("/Dashboard")}>
+            <Menu.Item key="1" icon={<PicRightOutlined />} onClick={() => router.push("/Dashboard")}>
               Dashboard
             </Menu.Item>
             <Menu.Item key="2" icon={<LoginOutlined />} onClick={() => router.push("/Login")}>
               Login
             </Menu.Item>
-            <Menu.Item key="3" onClick={() => router.push("/Logout")}>
+            <Menu.Item key="3" icon={<LogoutOutlined />} onClick={() => router.push("/Logout")}>
               Log out
             </Menu.Item>
           </SubMenu>
@@ -138,22 +148,22 @@ export default function SiteConstant ({ selectedMenuItem, handleMenuClick, child
               fontWeight: 'bold',
             }}
           >
-            <Menu.Item key="4" onClick={() => router.push("/MediaLibrary")}>
+            <Menu.Item key="4" icon={<FileImageOutlined />} onClick={() => router.push("/MediaLibrary")}>
               Media Library
             </Menu.Item>
-            <Menu.Item key="5" onClick={() => router.push("/Menus")}>
+            <Menu.Item key="5" icon={<MenuOutlined />} onClick={() => router.push("/Menus")}>
               Menus
             </Menu.Item>
-            <Menu.Item key="6" onClick={() => router.push("/Navbars")}>
+            <Menu.Item key="6" icon={<PicCenterOutlined />}  onClick={() => router.push("/Navbars")}>
               Navbars
             </Menu.Item>
-            <Menu.Item key="7" onClick={() => router.push("/Sliders")}>
+            <Menu.Item key="7" icon={<SlidersOutlined />}  onClick={() => router.push("/Sliders")}>
               Sliders
             </Menu.Item>
-            <Menu.Item key="8" onClick={() => router.push("/Cards")}>
+            <Menu.Item key="8" icon={<IdcardOutlined />}  onClick={() => router.push("/Cards")}>
               Cards
             </Menu.Item>
-            <Menu.Item key="9" onClick={() => router.push("/Forms")}>
+            <Menu.Item key="9" icon={<FormOutlined />}  onClick={() => router.push("/Forms")}>
               Forms
             </Menu.Item>
           </SubMenu>
@@ -169,16 +179,16 @@ export default function SiteConstant ({ selectedMenuItem, handleMenuClick, child
               fontWeight: 'bold',
             }}
           >
-            <Menu.Item key="10" onClick={() => router.push("/About")}>
+            <Menu.Item key="10" icon={<FontSizeOutlined />} onClick={() => router.push("/About")}>
               About
             </Menu.Item>
-            <Menu.Item key="11" onClick={() => router.push("/CylinderGas")}>
+            <Menu.Item key="11" icon={<BoxPlotOutlined />} onClick={() => router.push("/CylinderGas")}>
               Cylinder Gas
             </Menu.Item>
-            <Menu.Item key="12" onClick={() => router.push("/AutoGas")}>
+            <Menu.Item key="12" icon={<BoxPlotOutlined />} onClick={() => router.push("/AutoGas")}>
               Auto Gas
             </Menu.Item>
-            <Menu.Item key="13" onClick={() => router.push("/BulkGas")}>
+            <Menu.Item key="13" icon={<BoxPlotOutlined />} onClick={() => router.push("/BulkGas")}>
               Bulk Gas
             </Menu.Item>
           </SubMenu>
