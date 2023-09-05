@@ -21,17 +21,24 @@ import {
   BoxPlotOutlined,
 } from '@ant-design/icons';
 import Link from 'next/link';
+import { useRouter } from "next/navigation";
 
 const { Sider } = Layout;
 const { SubMenu } = Menu;
 const { Panel } = Collapse;
 
-export default function SiteConstant ({ selectedMenuItem, handleMenuClick, children }) {
+export default function SiteContent ({ children }) {
 
+    const router = useRouter();
     const [collapsed, setCollapsed] = useState(false);
     const handleCollapse = () => {
         setCollapsed(!collapsed);
       };
+    
+    const [selectedMenuItem, setSelectedMenuItem] = useState('1');
+    const handleMenuClick = (item) => {
+      setSelectedMenuItem(item.key);
+    };
     
   return (
     <Layout style={{ minHeight: '100vh' }}>
