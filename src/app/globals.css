@@ -8,6 +8,7 @@
   --gray: #f5f5f5;
   --gray-dark: #e5e5e5;
   --theme: #9012ff;
+  --themes: #F1612A;
 }
 
 
@@ -40,11 +41,11 @@ a {
   padding: 0 1rem;
 }
 
-.flexed{
+.flexed {
   display: flex;
 }
 
-.grided{
+.grided {
   display: grid;
 }
 
@@ -64,3 +65,49 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+
+
+/* login page start */
+.login-page {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  
+}
+.login-page-section{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* margin-top: 5rem; */
+}
+.login-content h1{
+  font-size: 50px;
+  font-weight: 400;
+  
+}
+.login-content p{
+  font-size: 18px;
+  color: #7D88A1;
+}
+.input-field{
+  height: 40px;
+  margin-top: .5rem;
+}
+.ant-input:focus{
+  border-color: var(--themes);
+}
+.ant-input:hover{
+  border-color:var(--themes);
+  box-shadow: none;
+}
+.buttons{
+  height: 40px;
+  background-color: var(--themes);
+  font-size: 18px;
+}
+:where(.css-dev-only-do-not-override-nnuwmp).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover{
+  background-color: var(--themes);
+}
+
+/* login page end */

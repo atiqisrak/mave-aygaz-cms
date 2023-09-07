@@ -41,7 +41,7 @@ export default function SiteContent ({ children }) {
     };
     
   return (
-    <Layout style={{ minHeight: '100vh' }}>
+    <Layout >
         <div
         className="collapse-button"
         style={{
